@@ -9,6 +9,9 @@ import BindEventHandling from './components/BindEventHandling'
 import ParentComponent from './components/ParentComponent'
 import ConRendering from './components/ConRendering'
 import ListRendering from './components/ListRendering'
+import Stylesheet from './components/Stylesheet'
+import './components/Stylesheet.css'
+import styles from './components/Stylesheet.module.css'
 
 function App() {
   return (
@@ -34,6 +37,10 @@ function App() {
       <ConRendering></ConRendering>
       {/* Display the List using map function */}
       <ListRendering></ListRendering>
+      <Stylesheet></Stylesheet>
+      {/* if we import regular css here than it can also use in child compnent without import
+      but css module file not accessible direct in child component */}
+      <h1 className={styles.success}>css using css module</h1>
     </div>
   );
 }
