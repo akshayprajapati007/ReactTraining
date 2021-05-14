@@ -17,6 +17,7 @@ import LifecycleA from './components/LifecycleA'
 import Fragment from './components/Fragment'
 import ParentComp from './components/ParentComp'
 import RefsDemo from './components/RefsDemo'
+import FRParentInput from './components/FRParentInput'
 
 function App() {
   return (
@@ -68,7 +69,11 @@ function App() {
       {/* Pure Component usage */}
       <ParentComp></ParentComp>
       
+      {/* Use of refs */}
       <RefsDemo></RefsDemo>
+
+      {/* Forwarding refs */}
+      <FRParentInput></FRParentInput>
 
     </div>
   );
