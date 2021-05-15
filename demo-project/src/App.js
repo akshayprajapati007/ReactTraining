@@ -23,42 +23,42 @@ function App() {
   return (
     <div className="App">
       {/* Functional Component */}
-     <Functional />
+     {/* <Functional /> */}
 
      {/* Class Component */}
-      <Class />
+      {/* <Class /> */}
 
       {/* return using JSX */}
-      <Jsx />
+      {/* <Jsx /> */}
 
       {/* Use of props */}
-      <Props name='Ak' nickName='A'>
+      {/* <Props name='Ak' nickName='A'>
         <p>this p from first props.</p>
-      </Props>
+      </Props> */}
 
       {/* Use of setSet */}
-      <SetState></SetState>
+      {/* <SetState></SetState> */}
 
       {/* Event Handling example */}
-      <EventHandling></EventHandling>
+      {/* <EventHandling></EventHandling> */}
 
       {/* Binding Eventhandler */}
-      <BindEventHandling></BindEventHandling>
+      {/* <BindEventHandling></BindEventHandling> */}
 
       {/* Send method as a parameter */}
-      <ParentComponent></ParentComponent>
-      <ConRendering></ConRendering>
+      {/* <ParentComponent></ParentComponent>
+      <ConRendering></ConRendering> */}
 
       {/* Display the List using map function */}
-      <ListRendering></ListRendering>
-      <Stylesheet></Stylesheet>
+      {/* <ListRendering></ListRendering>
+      <Stylesheet></Stylesheet> */}
 
       {/* if we import regular css here than it can also use in child compnent without import
       but css module file not accessible direct in child component */}
-      <h1 className={styles.success}>css using css module</h1>
+      {/* <h1 className={styles.success}>css using css module</h1> */}
 
       {/* Form Basics */}
-      <FormBasic></FormBasic>
+      {/* <FormBasic></FormBasic> */}
 
       {/* Updating methods excecution order */}
       <LifecycleA></LifecycleA>
