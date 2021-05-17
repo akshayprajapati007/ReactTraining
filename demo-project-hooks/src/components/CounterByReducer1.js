@@ -14,18 +14,18 @@ const reducer = (state, action) => {
     }
 }
 
-function CounterByReducer() {
+function CounterByReducer1() {
 
-  const [count, dispatch] = useReducer(reducer, intialState)
+  const [count, setCount] = useReducer(reducer, intialState)
 
     return (
         <div>
             <div>Count - {count}</div>
-            <button onClick={() => dispatch('increment')}>Increment</button>
-            <button onClick={() => dispatch('decrement')}>Decrement</button>
-            <button onClick={() => dispatch('reset')}>Reset</button>
+            <button onClick={() => setCount('increment')}>Increment</button>
+            <button onClick={() => setCount('decrement')}>Decrement</button>
+            <button onClick={() => setCount('reset')}>Reset</button>
         </div>
     )
 }
 
-export default CounterByReducer
+export default CounterByReducer1

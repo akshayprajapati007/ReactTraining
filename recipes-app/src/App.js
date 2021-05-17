@@ -4,8 +4,8 @@ import Recipe from './Recipe';
 
 function App() {
 
-  const APP_ID = 'YourAppId'
-  const APP_KEY = 'YourAppKey'
+  const APP_ID = 'YourAppId'  // Edamam recipe API App ID
+  const APP_KEY = 'YourAppKey' // Edamam recipe API App key
   const [recipes, setRecipes] = useState([])
   const [inputText, setInputText] = useState('')
   const [searchText, setSearchText] = useState('chicken')
