@@ -3,12 +3,17 @@ import './App.css';
 import ComponentA from './components/ComponentA';
 import Counter1_1 from './components/Counter1_1';
 import Counter2_1 from './components/Counter2_1';
+import CounterByCustomHook from './components/CounterByCustomHook';
 import CounterByReducer1 from './components/CounterByReducer1';
 import CounterByReducer2 from './components/CounterByReducer2';
 import CounterByReducer3 from './components/CounterByReducer3';
+import CustomHook from './components/CustomHook';
 import DataFetching from './components/DataFetching';
 import DataFetchingOne from './components/DataFetchingOne';
 import DataFetchingTwo from './components/DataFetchingTwo';
+import FocusByUseRef from './components/FocusByUseRef';
+import FocusByUseRef2 from './components/FocusByUseRef2';
+import FormUsingCustomHook from './components/FormUsingCustomHook';
 import HookCounter from './components/HookCounter';
 import HookCounter2 from './components/HookCounter2';
 import HookCounter3 from './components/HookCounter3';
@@ -16,6 +21,8 @@ import HookCounter4 from './components/HookCounter4';
 import HookCounter5 from './components/HookCounter5';
 import IntervalHookCounter from './components/IntervalHookCounter';
 import MouseContainer from './components/MouseContainer';
+import UCB_ParentComponent from './components/UCB_ParentComponent';
+import UM_Counter from './components/UM_Counter';
 
 
 export const UserContext = React.createContext()
@@ -57,7 +64,7 @@ function App() {
       <HookCounter4/>
 
       {/* UseEffect method usage */}
-      <HookCounter5/>
+      {/* <HookCounter5/> */}
       
       {/* Only one time render useEffect and remove subscription*/}
       {/* <MouseContainer/> */}
@@ -98,6 +105,27 @@ function App() {
 
       {/* Fetching data using useReducer */}
       <DataFetchingTwo/>
+
+      {/* UseCallback hook usage for counter */} {/* use when not require function call */}
+      <UCB_ParentComponent/>
+
+      {/* UseMemo hook usage for counter*/} {/* use when not require last result checking */}
+      <UM_Counter />
+
+      {/* Focusing input on pageload using useRef */}
+      <FocusByUseRef/>
+
+      {/* Clear any subscription by using useRef */}
+      <FocusByUseRef2/>
+
+      {/* Set document title using custom hook */}
+      <CustomHook/>
+
+      {/* Create counter using custom hook */}
+      <CounterByCustomHook/>
+
+      {/* Control component using custom hook */}
+      <FormUsingCustomHook/>
 
     </div>
   );
