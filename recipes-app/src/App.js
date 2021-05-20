@@ -4,8 +4,8 @@ import Recipe from './Recipe';
 
 function App() {
 
-  const APP_ID = 'YourAppId'  // Edamam recipe API App ID
-  const APP_KEY = 'YourAppKey' // Edamam recipe API App key
+  const APP_ID = '16d5e01b'  // Edamam recipe API App ID
+  const APP_KEY = '53dfc4a89a6ec4f2d3bda3da32651051' // Edamam recipe API App key
   const [recipes, setRecipes] = useState([])
   const [inputText, setInputText] = useState('')
   const [searchText, setSearchText] = useState('chicken')
@@ -19,6 +19,7 @@ function App() {
     const response = await fetch(`https://api.edamam.com/search?q=${searchText}&app_id=${APP_ID}&app_key=${APP_KEY}`)
     const data = await response.json()
     setRecipes(data.hits)
+    console.log(data)
   }
 
   const setTextInSubmit = e => {

@@ -1,0 +1,48 @@
+.App {
+  min-height: 100vh;
+}
+
+.country-form {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  width: 50%;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.home-btn {
+  margin-left: 20px;
+  height: 42px;
+}
+
+.country-table {
+  margin-top: 30px;
+}
+
+.weather-table {
+  position: relative;
+  margin-top: 250px;
+}
+
+.MuiButton-root {
+  height: 40px !important;
+  background: rgb(3, 112, 163) !important;
+  box-shadow: none !important;
+}
+
+.MuiTable-root {
+  width: 70% !important;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.MuiPaper-elevation1 {
+  box-shadow: none !important;
+}
