@@ -4,7 +4,7 @@ import CountryDetails from './CountryDetails';
 import WeatherDetails from './WeatherDetails';
 
 
-const APP_KEY = '3ff98fd835d9fd12cf13a812b5b607e9'
+const APP_KEY = 'Your API KEY'
 function Home() {
     
     const [countries, setCountries] = useState({})
