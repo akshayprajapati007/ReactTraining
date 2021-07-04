@@ -101,7 +101,6 @@ function capitalizeFirstLetter(str) {
 function Products() {
   const [displayData, setDisplayData] = useState([]);
   const [tableArray, setTableArray] = useState([]);
-  const [updateState, setUpdateState] = useState(false);
   const classes = useStyles();
 
   useEffect(() => {
@@ -266,7 +265,6 @@ function Products() {
                   <ErrorMessage component="span" name="gst" />
                 </div>
               </div>
-              {!updateState ? (
                 <Button
                   type="submit"
                   variant="contained"
@@ -275,17 +273,6 @@ function Products() {
                 >
                   ADD
                 </Button>
-              ) : (
-                <Button
-                  type="button"
-                  variant="contained"
-                  color="secondary"
-                  className={classes.addButton}
-                  onClick={updateData}
-                >
-                  UPDATE
-                </Button>
-              )}
             </Form>
           </Formik>
         </div>
