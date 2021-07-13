@@ -1,6 +1,6 @@
-import App from "./App";
+import Home from "../components/Home";
 import { connect } from "react-redux";
-import { incrementCount, decrementCount } from "./Redux/index";
+import { incrementCount, decrementCount } from "../Redux/index";
 import { compose } from "redux";
 
 export const mapStateToProps = (state) => {
@@ -18,4 +18,4 @@ export const mapDispatchToProps = (dispatch) => {
 
 const enhance = compose(connect(mapStateToProps, mapDispatchToProps));
 
-export default enhance(App);
+export default enhance(Home);
