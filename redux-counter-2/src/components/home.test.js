@@ -15,18 +15,16 @@ it("initially count will be zero", () => {
   expect(getByTestId("h2Tag").textContent).toBe("Count : 0");
 });
 
-describe("increment and decrement button", () => {
-  it("onclick on increment button must be dispatch", () => {
-    const incrementCount = jest.fn();
-    const { getByTestId } = render(<Home incrementCount={incrementCount} />);
-    fireEvent.click(getByTestId("incrementButton"));
-    expect(incrementCount).toHaveBeenCalled();
-  });
+it("onclick on increment button must be dispatch", () => {
+  const incrementCount = jest.fn();
+  const { getByTestId } = render(<Home incrementCount={incrementCount} />);
+  fireEvent.click(getByTestId("incrementButton"));
+  expect(incrementCount).toHaveBeenCalled();
+});
 
-  it("onclick on decrement button must be dispatch", () => {
-    const decrementCount = jest.fn();
-    const { getByTestId } = render(<Home decrementCount={decrementCount} />);
-    fireEvent.click(getByTestId("decrementButton"));
-    expect(decrementCount).toHaveBeenCalled();
-  });
+it("onclick on decrement button must be dispatch", () => {
+  const decrementCount = jest.fn();
+  const { getByTestId } = render(<Home decrementCount={decrementCount} />);
+  fireEvent.click(getByTestId("decrementButton"));
+  expect(decrementCount).toHaveBeenCalled();
 });
