@@ -1,0 +1,1 @@
+export const NASA_KEY = process.env.REACT_APP_NASA_KEY

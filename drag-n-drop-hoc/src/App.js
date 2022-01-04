@@ -6,6 +6,7 @@ const app = {
   display: "grid",
   placeItems: "center",
   height: "100vh",
+  background: "#2C3531",
 };
 
 const itemContainer = {
@@ -14,15 +15,23 @@ const itemContainer = {
   justifyContent: "center",
   flexWrap: "wrap",
   width: "500px",
-  height: "600px",
+  height: "430px",
   border: "2px solid black",
+  borderRadius: "16px",
+  background: "#1A1A1D",
+  boxShadow: "5px 5px 3px 0px rgba(130,130,130,0.59)",
 };
 
 const itemCss = {
   height: "150px",
   width: "150px",
   border: "1px solid black",
+  borderRadius: "16px",
   margin: "auto 1em",
+  color: "white",
+  display: "grid",
+  placeItems: "center",
+  background: "#2C3531",
 };
 
 const SortableItem = SortableElement(({ value }) => (
