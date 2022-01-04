@@ -63,4 +63,71 @@ export const quiz =  {
       "point": "20"
     },
   ]
+}
+
+export const hindiQuiz = {
+	"quizTitle": "React Quiz",
+  "nrOfQuestions": "5",
+  "questions": [
+    {
+      "question": "क्रिएट-रिएक्शन-ऐप इंस्टॉल करने के लिए निम्न में से किस कमांड का उपयोग किया जाता है?",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "answers": [
+        "npm install -g create-react-app",
+        "npm install create-react-app",
+        "npm install -f create-react-app",
+        "install -g create-react-app"
+      ],
+      "correctAnswer": "1",
+      "point": "20"
+    },
+    {
+      "question": "ReactJS _____ द्वारा विकसित किया गया है?",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "answers": [
+        "गूगल इंजीनियर्स",
+        "फेसबुक इंजीनियर"
+      ],
+      "correctAnswer": "2",
+      "point": "20"
+    },
+    {
+      "question": "क्या React.js मेमोरी में वर्चुअल डोम बनाता है?",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "answers": [
+        "सत्य",
+        "असत्य"
+      ],
+      "correctAnswer": "1",
+      "point": "20"
+    },
+    {
+      "question": "निम्नलिखित में से कौन सी अवधारणा ReactJS की कुंजी है/हैं?",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "answers": [
+        "घटक-उन्मुख डिजाइन",
+        "घटना प्रतिनिधिमंडल मॉडल",
+        "ऊपर के दोनों",
+      ],
+      "correctAnswer": "3",
+      "point": "20"
+    },
+    {
+      "question": "निम्नलिखित में से कौन सा इनबिल्ट हुक ऑफ रिएक्ट है?",
+      "questionType": "text",
+      "answerSelectionType": "multiple",
+      "answers": [
+        "useEffect()",
+        "useRef()",
+        "useCreate()",
+        "useLayoutEffect()"
+      ],
+      "correctAnswer": [1, 2, 4],
+      "point": "20"
+    },
+  ]
 } 

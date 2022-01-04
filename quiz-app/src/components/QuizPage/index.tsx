@@ -1,6 +1,6 @@
 import React from 'react'
 import Quiz from 'react-quiz-component'
-import { quiz } from '../../utility/constants'
+import { quiz, hindiQuiz } from '../../utility/constants'
 import {useLocation} from 'react-router-dom'
 import { makeStyles } from '@mui/styles'
 import CustomResultPage from '../CustomResultPage'
@@ -42,7 +42,7 @@ const QuizPage = () => {
 	return (
 		<div className={classes.mainContainer}>
 			<Quiz
-				quiz={quizLanguage === 'english' ? quiz : quiz}
+				quiz={quizLanguage === 'english' ? quiz : hindiQuiz}
 				showDefaultResult={false}
 				customResultPage={(obj) => CustomResultPage(obj, classes)}/>
 		</div>
