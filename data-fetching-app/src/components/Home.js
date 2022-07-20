@@ -1,7 +1,7 @@
 import { Component } from "react";
 import TableData from "./TableData";
 
-export class Home extends Component {
+class Home extends Component {
   filterArray = [];
   interval = 0;
   constructor(props) {
